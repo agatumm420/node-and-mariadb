@@ -1,0 +1,25 @@
+{
+    "name": "node",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "nodemon app.js",
+      "client":" cd && cd projekt && cd user_ex && npm start",
+      "start":"concurrently \"npm run dev \"\"npm run client\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "concurrently": "^7.1.0",
+      "dotenv": "^16.0.0",
+      "ejs": "^3.1.6",
+      "express": "^4.17.3",
+      "firebase-admin": "^10.0.2",
+      "http-proxy-middleware": "^2.0.4",
+      "mariadb": "^3.0.0",
+      "nodemon": "^2.0.15"
+    }
+  }
